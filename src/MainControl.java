@@ -1,26 +1,38 @@
 public class MainControl {
 
+    //Attribute
+    //Referenzen
+    private Person person1;
+    private Person person2, person3;
 
+    public static void main (String[] args) {
+        //halloWelt();
+        new Person("David Gregory Glusmann", 16);
+        new Person("Yener Varli", 16);
+        new Person("Bilal El Hawari", 17);
+    }
+    public MainControl() {
+        person1 = new Person("David Gregory Glusmann", 16);
+        person2 = new Person("Yener Varli", 16);
+        person3 = new Person("Bilal El Hawari", 17);
+        //
+        person1.halloSagen();
+        System.out.println(person1);
+        System.out.println(person2);
+        person1.setName("Sebastian");
+        System.out.println("Person 1 heißt " + person1.getName() );
+    }
+}
+//--------------------------------------------
     public static void main (String[] args) {
        // halloWelt();
         new Person();
         new Person();
         new Person();
         new Person();
-        Fahrzeug mercedesS63 = new Fahrzeug("Mercedes", "S63", "schwarz", 2016);
-        Fahrzeug bmwM5 = new Fahrzeug("BMW", "M5", "schwarz", 1985 );
-        Fahrzeug lamborgini = new Fahrzeug( "Lamborghini", "Huracan", "rot", 2014)
+        Fahrzeug fahrzeug1 = new Fahrzeug("Mercedes", "S63", "schwarz", 2016);
+        Fahrzeug fahrzeug2 = new Fahrzeug("BMW", "M5", "schwarz", 1985 );
+        Fahrzeug fahrzeug3 = new Fahrzeug( "Lamborghini", "Huracan", "rot", 2014)
     }
 
-
-    private static void halloWelt() {
-        System.out.println("Hello World!");
-        System.out.print("Wählt David");
-        System.out.print ("David");
-        System.out.print("Wählt");
-        System.out.print("ASDASHDBABSUDHABSDJKBAKDJKAKJDBKHABSDKB");
-
-
-
-    }
 
