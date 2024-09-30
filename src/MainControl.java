@@ -4,13 +4,16 @@ public class MainControl {
     //Referenzen
     private Person person1;
     private Person person2, person3;
+    private Fahrzeug fahrzeug1;
 
-    public static void main (String[] args) {
+
+    public static void main(String[] args) {
         //halloWelt();
         new Person("David Gregory Glusmann", 16);
         new Person("Yener Varli", 16);
         new Person("Bilal El Hawari", 17);
     }
+
     public MainControl() {
         person1 = new Person("David Gregory Glusmann", 16);
         person2 = new Person("Yener Varli", 16);
@@ -20,19 +23,20 @@ public class MainControl {
         System.out.println(person1);
         System.out.println(person2);
         person1.setName("Sebastian");
-        System.out.println("Person 1 heißt " + person1.getName() );
+        System.out.println("Person 1 heißt " + person1.getName());
     }
-}
-//--------------------------------------------
-    public static void main (String[] args) {
-       // halloWelt();
+
+    //--------------------------------------------
+    public static void main(String[] args) {
+        // halloWelt();
         new Person();
         new Person();
         new Person();
         new Person();
         Fahrzeug fahrzeug1 = new Fahrzeug("Mercedes", "S63", "schwarz", 2016);
-        Fahrzeug fahrzeug2 = new Fahrzeug("BMW", "M5", "schwarz", 1985 );
-        Fahrzeug fahrzeug3 = new Fahrzeug( "Lamborghini", "Huracan", "rot", 2014)
+        Fahrzeug fahrzeug2 = new Fahrzeug("BMW", "M5", "schwarz", 1985);
+        Fahrzeug fahrzeug3 = new Fahrzeug("Lamborghini", "Huracan", "rot", 2014)
     }
 
+}
 
