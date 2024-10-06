@@ -58,10 +58,10 @@ public class Fahrzeug {
             this.modell = modell;
         }
         public void setFahrer(Person fahrer) {
-          this.fahrer = fahrer;
+          this.Fahrer = fahrer;
         }
         public void setBeifahrer(Person beifahrer) {
-          this.beifahrer = beifahrer;
+          this.beiFahrer = beifahrer;
         }
 
         public void nenneBesatzung() {

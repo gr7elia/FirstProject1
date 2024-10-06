@@ -8,17 +8,20 @@ public class Person {
 
     // Konstruktor
     public Person(String name, int age) {
-         this.name = name;
-         this.age = age;
-         halloSagen();
-     }
-     public String getName() {
-    return name;
+        this.name = name;
+        this.age = age;
+        halloSagen();
     }
+
+    public String getName() {
+        return name;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
-    public int getAge(){
+
+    public int getAge() {
         return age;
     }
 
@@ -26,3 +29,4 @@ public class Person {
     public void halloSagen() {
         System.out.println("Hi, my name is " + name + " and I am " + age + " years old ");
     }
+}
