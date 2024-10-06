@@ -5,7 +5,8 @@ public class Fahrzeug {
     private String modell;
     private String farbe;
     private int baujahr;
-
+    private Person Fahrer;
+    private Person beiFahrer;
 
      //Konstruktor(Hersteller)
       public Fahrzeug(String marke, String modell, String farbe, int baujahr) {
@@ -23,9 +24,9 @@ public class Fahrzeug {
         System.out.println("Modell:" + modell);
         System.out.println("Farbe:" + farbe);
         System.out.println("Baujahr:" + baujahr);
-        //
+    }
         public int getBaujahr() {
-            return baujahr
+            return baujahr;
         }
         public String getFarbe() {
             return farbe;
@@ -37,6 +38,13 @@ public class Fahrzeug {
             return modell;
         }
         ///////////////////////////////////
+       public Person getFahrer() {
+          return fahrer;
+       }
+       public Person getBeiFahrer() {
+          return fahrer;
+       }
+       /////////////
        public void setBaujahr(int baujahr) {
             this.baujahr = baujahr;
         }
@@ -49,8 +57,18 @@ public class Fahrzeug {
         public void setModell(String modell) {
             this.modell = modell;
         }
+        public void setFahrer(Person fahrer) {
+          this.fahrer = fahrer;
+        }
+        public void setBeifahrer(Person beifahrer) {
+          this.beifahrer = beifahrer;
+        }
+
+        public void nenneBesatzung() {
+            System.out.println("Im Auto sitzt " + fahrer.getName() + " als Fahrer und " + beifahrer.getName() + " als Beifahrer.");
+        }
+        }
         //Referenzen
         Person beifahrer = new Person("Bilal El Hawari", 17);
         Person fahrer = new Person("Yener Varli", 16);
-
-    }
+}

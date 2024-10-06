@@ -12,6 +12,15 @@ public class Person {
          this.age = age;
          halloSagen();
      }
+     public String getName() {
+    return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public int getAge(){
+        return age;
+    }
 
     // Methoden
     public void halloSagen() {
