@@ -25,14 +25,16 @@ public class MainControl {
 }
 //--------------------------------------------
     public static void main (String[] args) {
-       // halloWelt();
+        // halloWelt();
         new Person();
         new Person();
         new Person();
         new Person();
         Fahrzeug fahrzeug1 = new Fahrzeug("Mercedes", "S63", "schwarz", 2016);
-        Fahrzeug fahrzeug2 = new Fahrzeug("BMW", "M5", "schwarz", 1985 );
-        Fahrzeug fahrzeug3 = new Fahrzeug( "Lamborghini", "Huracan", "rot", 2014)
+        fahrzeug1.setFahrer(new Person("Yener Varli", 16));
+        fahrzeug1.setBeifahrer(new Person("Bilal El Hawari", 17));
+        Fahrzeug fahrzeug2 = new Fahrzeug("BMW", "M5", "schwarz", 1985);
+        Fahrzeug fahrzeug3 = new Fahrzeug("Lamborghini", "Huracan", "rot", 2014);
     }
-
+    }
 
